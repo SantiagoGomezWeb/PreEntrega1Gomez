@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-import ItemListContainser from "./components/ItemListContainer";
-
+import ItemListContainer from "./components/ItemListContainer";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <ItemListContainser greeting='Bienvenidos a nuestro Catálogo de Productos'/>
+      <ItemListContainer greeting='Bienvenidos a nuestro Catálogo de Productos'/>
       <div className="fondo"></div>
     </>
   );
