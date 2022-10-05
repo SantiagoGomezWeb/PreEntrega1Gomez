@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getTopNav } from './../data/navbars';
+import { getTopNav } from '../../../data/navbars';
 import CartWidget from './CartWidget'
 
 const Navbar = () => {
@@ -18,9 +18,9 @@ const Navbar = () => {
           <a href='#' className='nav__brand'>
             Autocor
           </a>
-          <ul className={collapse} navbar-nav me-auto>
+          <ul className={collapse}>
             {navItems.map((item) => (
-              <li key={item.id} class='nav-item'>
+              <li key={item.id} className='nav-item'>
                 <a href={item.href} className='nav__link'>
                   {item.label}
                 </a>

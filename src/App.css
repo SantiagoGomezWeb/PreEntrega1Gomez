@@ -1,4 +1,9 @@
-.App {
+:root {
+  --primary: rgb(29, 186, 186);
+  --secondary: teal;;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -20,6 +25,184 @@
 
 .App-link {
   color: #61dafb;
+} */
+
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  /* box-shadow: 0px 0px 10px 1px #ccc; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0px 10px;
+}
+
+.widget-container {
+  display: flex;
+  align-items: center;
+}
+
+/* MAIN */
+
+main {
+  min-height: 80vh;
+}
+
+.item-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card {
+  box-shadow: 4px 4px 10px 0.5px #b0b0b0;
+  max-width: 35%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  /* border-bottom: 4px solid red; */
+}
+
+.card-info {
+  padding: 8px 12px;
+  background-color: var(--secondary);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.card-titulo {
+  padding: 8px 12px;
+  background-color: var(--secondary);
+  border-radius: 0px 0px 8px 8px;
+  color: white;
+}
+
+.card-precio {
+  padding: 8px 12px;
+  background-color: var(--secondary);
+  border-radius: 0px 0px 8px 8px;
+  color: rgb(190, 186, 140);
+}
+
+.card-info h4 {
+  margin: 8px 0px;
+}
+
+.card-info h5 {
+  color: white;
+  background-color: var(--primary);
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* DETAIL */
+.container-detail {
+  display: flex;
+  align-items: flex-start;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.container-detail img {
+  width: 350px;
 }
 
 
+/* ITEM COUNT */
+
+.container-count {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 1px #ccc;
+}
+
+.count-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 30%;
+}
+
+.count-btn button {
+  background-color: var(--secondary);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.count-btn button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.count-btn p {
+  background-color: var(--primary);
+  font-size: 20px;
+  color: rgb(255, 242, 2);
+  padding: 6px;
+  margin: 10px;
+}
+
+.add-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--primary);
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

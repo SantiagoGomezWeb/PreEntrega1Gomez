@@ -28,6 +28,13 @@ h2 {
   color: rgb(225, 222, 222);
 }
 
+.parrafo-detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(69, 152, 152);
+  color: rgb(225, 222, 222);
+}
 
 a {
   text-decoration: none;
